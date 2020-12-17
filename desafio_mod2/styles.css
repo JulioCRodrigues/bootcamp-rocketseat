@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --color-purple: #8257e5;
+}
+
+body{
+    background: #121214;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header{
+    padding: 30px;
+    border-bottom: 2px solid #121214;
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.links{
+    
+    text-align: center;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 32px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 16px;
+    line-height: 28px;
+}
+    
+
+.links a:hover{
+    color: var(--color-purple);
+    transition: color 200ms;
+    font-weight: bold;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.wrapper img{
+    border-radius: 50%;
+    border: 5px solid var(--color-purple);
+    margin: 32px;
+    
+}
+
+.wrapper h1{
+    font-size: 40px;
+    padding: 25px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.wrapper h2{
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+ul li{
+    font-size: 25px;
+    
+}
+
+#links-footer{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#links-footer a{
+    border-bottom: 5px solid var(--color-purple);
+    padding: 10px;
+    
+}
