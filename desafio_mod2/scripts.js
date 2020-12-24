@@ -6,8 +6,14 @@ const modal = document.querySelector('.modal');
 
 for(let card of cards){
     card.addEventListener("click", function() {
+
+        if (modal.classList.contains("maxport")) {
+            modal.classList.remove("maxport");
+          }
+
         modalOverlay.classList.add('active');
     });
+  
 }
 
 document.querySelector('.close-modal').addEventListener("click", function() {
