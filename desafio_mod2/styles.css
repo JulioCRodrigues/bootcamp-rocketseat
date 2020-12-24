@@ -31,11 +31,11 @@ header{
 .links a{
     color: white;
     text-decoration: none;
-    padding: 32px;
+    padding: 15px;
     font-size: 22px;
     font-weight: bold;
     margin: 0 16px;
-    line-height: 28px;
+    line-height: 15px;
 }
     
 
@@ -141,35 +141,64 @@ h1{
 }
 
 /* === MODAL === */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
 .modal{
     background-color: white;
     width: 90%;
     height: 90%;
     margin: 5vh auto;
     position: relative;
-
-
 }
 
-.modal .close-modal{
+.modal .close-modal {
     color: black;
     position: absolute;
     right: 8px;
     top: 8px;
     cursor: pointer;
-
 }
 
-/* MODAL ACTIVE */
+.modal .max-modal{
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.modal .min-modal{
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    cursor: pointer;
+}
+
+/* === MODAL ACTIVE === */
 .modal-overlay.active{
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
+}
+
+/* === MODAL MAX === */
+.modal.maxport{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 iframe{
     width: 100%;
     height: 90%;
     position: absolute;
-    top: 5%;
+    top: 40px;
 }
-
