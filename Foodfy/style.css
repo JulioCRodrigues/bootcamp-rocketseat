@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height: 90%;
+    margin: 0 70px;
+    left: 0;
+}
+
+.logo{
+    margin: 50px;
+    padding-left: 50px;
+}
+
+img{
+    margin-left: 32px;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    margin: 32px 0;
+}
+
+ul {
+    margin: 10px;
+}
+
+a{
+    padding: 2px;
+}
+
+a:hover{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner{
+    width: 940px;
+    height: 366px;
+    max-width: 940px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+h1{
+    padding: 10px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.banner-content{
+    font-size: 18px;
+    max-width: 410px;
+    line-height: 25px;
+    text-align: justify;
+    margin: 0 40px;
+}
+
+#conteudo{
+    opacity: 70%;
+    margin-left: 11px;
+}
+
+.banner-image{
+    margin-top: 30px;
+}
