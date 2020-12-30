@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Foodfy - Projeto</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             
             <div class="banner-content">
                 <h1 class="title">As melhores receitas</h1>
-                <p id="conteudo"> Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+                <p id="containt"> Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
             </div>
     
             <div class="banner-image">
@@ -36,86 +37,86 @@
     </section>
 
     <main>
-        <div class="mais-acessadas"> 
+        <div class="more-acess"> 
             <h2>Mais acessadas</h2>
         </div>
 
         <div class="cards">
-            <div class="card">
+            <div class="card" id="asinhas">
                 <div class="image-card">
                     <img src="/images/asinhas.png" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Asinhas de frango ao barbecue</p>
                 </div>
 
-                <div class="autor-card">
+                <div class="author-card">
                     <p> por Julio Rodrigues</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="pizza">
                 <div class="image-card">
                     <img src="/images/pizza.png"" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Pizza 4 estações</p>
                 </div>
 
-                <div class="autor-card">
-                    <p> por Julio Rodrigues</p>
+                <div class="author-card">
+                    <p> por Gabriel  Rodrigues</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="espaguete">
                 <div class="image-card">
                     <img src="/images/espaguete.png" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Espaguete ao alho</p>
                 </div>
 
-                <div class="autor-card">
-                    <p> por Julio Rodrigues</p>
+                <div class="author-card">
+                    <p> por Dhara Rodrigues</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="lasanha">
                 <div class="image-card">
                     <img src="/images/lasanha.png" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Lasanha mac n’ cheese</p>
                 </div>
 
-                <div class="autor-card">
-                    <p> por Julio Rodrigues</p>
+                <div class="author-card">
+                    <p> por Luciana Rodrigues</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="doce">
                 <div class="image-card">
                     <img src="/images/doce.png" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Docinhos pão-do-céu</p>
                 </div>
 
-                <div class="autor-card">
-                    <p> por Julio Rodrigues</p>
+                <div class="author-card">
+                    <p> por Cidinha Rodrigues</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="burger">
                 <div class="image-card">
                     <img src="/images/burger.png" alt="Receita de asinhas">
                 </div>
-                <div class="titulo-card">
+                <div class="title-card">
                     <p>Triplo bacon burger</p>
                 </div>
 
-                <div class="autor-card">
-                    <p> por Julio Rodrigues</p>
+                <div class="author-card">
+                    <p> por Tania Rodrigues</p>
                 </div>
             </div>
             
@@ -123,9 +124,31 @@
         </div>
     </main>
 
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="image-modal">
+                <img src="/images/asinhas.png" alt="Imagem do modal">
+            </div>
+
+            <div class="title-modal">
+                <p>Asinhas de frango ao barbecue</p>
+            </div>
+
+            <div class="author-modal">
+                <p>por Julio Rodrigues</p>
+            </div>
+
+            <div class="close-modal">
+                <p>Fechar modal</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>Todos os direitos reservados, receitas Foodfy.</p>
     </footer>
+
+    <script src="/scripts.js"></script>
 
 </body>
 </html>

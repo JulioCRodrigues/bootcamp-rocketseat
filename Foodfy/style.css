@@ -88,7 +88,7 @@ h1{
     margin: 0 40px;
 }
 
-#conteudo{
+#containt{
     opacity: 70%;
     margin-left: 11px;
 }
@@ -104,7 +104,7 @@ main{
 
 }
 
-.mais-acessadas{
+.more-acess{
     margin-left: 180px;
 }
 
@@ -113,7 +113,8 @@ main{
     margin: 15px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    
 }
 
 
@@ -122,16 +123,18 @@ main{
     height: 140px;
     border-radius: 15px;
     margin: 15px auto;
+    cursor: pointer;
 }
 
-.titulo-card{
+.title-card{
     font-size: 18px;
     color: #111111;
     margin-left: 15px;
+    cursor: pointer;
     
 }
 
-.autor-card{
+.author-card{
     font-size: 14px;
     margin-left: 10px;
     opacity: 100%;
@@ -148,4 +151,63 @@ footer p{
     text-align: center;
     color: #999999;
     opacity: 100%;
+}
+
+/* MODAL */ 
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: #FFFFFF;
+    width: 660px;
+    height: 413px;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 16px;
+    
+}
+
+.image-modal img{
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    opacity: 100%;
+    margin-top: 30px;
+}
+
+.title-modal p{
+    font-size: 24px;
+    margin: 15px auto;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+.author-modal{
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.close-modal p{
+    margin: 60px auto;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+}
+
+/* MODAL ACTIVE */
+.modal-overlay.active{
+    visibility: visible;
+    opacity: 1;
 }
