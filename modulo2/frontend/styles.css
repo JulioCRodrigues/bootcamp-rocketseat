@@ -97,6 +97,7 @@ header{
 
 .card{
      background-color: var(--color-purple);
+     display: grid;
      cursor: pointer;
 }
 
@@ -112,6 +113,7 @@ header{
 .card-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card-price{

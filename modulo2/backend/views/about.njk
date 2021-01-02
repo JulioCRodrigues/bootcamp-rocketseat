@@ -1,26 +1,27 @@
 {% extends "layout.njk"%}
 
 {% block head %}
-    <title>Sobre - Julio Rodrigues</title>
+    <title>Sobre - {{about.name}}</title>
     {% endblock %}
 
 {% block content %}
 
     <div id="wrapper">
 
-        <img src="https://avatars3.githubusercontent.com/u/33026055?s=400&u=d3e906790f6353c27afb776b56914e65195b0982&v=4" alt="Julio ROdrigues">
+        <img src="{{about.avatar_url}}" alt="Imagem de {{about.name}}">
 
-        <h1> Júlio Rodrigues </h1>
-        <h2> Estudante - Rocketseat </h2>
-        <p> Desenvolvedor full-stack focado em desenvolver os melhores websites. Aluno ativo da <a href="https:rocketseat.com.br" target="_blank">Rocketseat</a></p>
+        <h1>{{about.name}}</h1>
+        <h2> {{about.role}}</h2>
+        <p> {{about.description}}</p>
 
     </div>
 
-    <div id="links-footer" class="links">
-        <a href="https:github.com/JulioCRodrigues" target="_blank">Github</a>
-        <a href="https:facebook.com/VulgoHades" target="_blank">Facebook</a>
-        <a href="https://linkedin.com/in/juliocrodrigues" target="_blank">LinkedIn</a>
 
+    <div id="links-footer" class="links">
+    
+        {% for link in about.links %}
+            <a href="{{ link.url }}" target="_blank">{{link.name}}</a>
+        {% endfor %}
     </div>
 
     {% endblock %}
