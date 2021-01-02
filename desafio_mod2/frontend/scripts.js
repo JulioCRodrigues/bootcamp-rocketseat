@@ -7,10 +7,13 @@ const modal = document.querySelector('.modal');
 for(let card of cards){
     card.addEventListener("click", function() {
 
+        const postId = card.getAttribute('id');
+
         if (modal.classList.contains("maxport")) {
             modal.classList.remove("maxport");
           }
 
+        modalOverlay.querySelector('iframe').src = `https://blog.rocketseat.com.br/${postId}`;
         modalOverlay.classList.add('active');
     });
   

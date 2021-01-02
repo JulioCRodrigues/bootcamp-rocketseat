@@ -9,56 +9,25 @@
 
     <section class="cards">
 
-        <div class="card">
-            
-            <div class="card-image">
-                <img src="https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg" alt="Imagem do post">
+        
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                
+                    <div class="card-image">
+                        <img src="{{item.image}}" alt="Imagem do post">
+                    </div>
+
+                    <div class="card-title">
+                        <p>{{item.title}}</p>
+                    </div>
+
+                    <div class="card-autor">
+                        <p>{{item.author}} </p>
+                        <p>{{item.time}}</p>
+                    </div>
             </div>
-
-            <div class="card-title">
-                <p>Mapas com React usando Leaflet</p>
-            </div>
-
-            <div class="card-autor">
-                <p>Thiago Marinho </p>
-                <p>10 min</p>
-            </div>
-
-        </div>
-
-        <div class="card">
-            
-            <div class="card-image">
-                <img src="https://blog.rocketseat.com.br/content/images/2020/07/como-fazer-um-bom-readme-preview.png" alt="Imagem do post">
-            </div>
-
-            <div class="card-title">
-                <p>Como fazer um bom README</p>
-            </div>
-
-            <div class="card-autor">
-                <p>Thiago Marinho </p>
-                <p>10 min</p>
-            </div>
-
-        </div>
-
-        <div class="card">
-            
-            <div class="card-image">
-                <img src="https://blog.rocketseat.com.br/content/images/2020/09/axios-um-cliente-http-full-stack-rocketseat.png" alt="Imagem do post">
-            </div>
-
-            <div class="card-title">
-                <p>Axios - um cliente HTTP Full Stack</p>
-            </div>
-
-            <div class="card-autor">
-                <p>Thiago Marinho </p>
-                <p>10 min</p>
-            </div>
-
-        </div>
+            {% endfor %}
+        
 
     </section>
 
@@ -86,7 +55,7 @@
             </a>
 
             <div class="modal-content">
-                <iframe src="https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
             </div>
         </div>
         
