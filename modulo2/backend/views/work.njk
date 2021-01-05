@@ -1,0 +1,38 @@
+{% extends "layout.njk"%}
+
+{% block head%}
+
+    <title> {{item.title}} | Julio Rodrigues</title>
+
+{% endblock %}     
+
+{% block content %}
+
+
+    <div id="wrapper">
+
+        <h1>{{item.title}}</h1>
+
+    </div>
+
+    <section class="work">
+
+        <div class="card">
+            <div class="card-work" id="{{item.id}}">
+
+                <iframe src="http://youtube.com.br/embed/{{item.id}}" frameborder="0"></iframe>
+            </div>
+
+            <div class="card-content">
+                <p>{{item.title}}</p>
+            </div>
+
+            <div class="card-info">
+                <p>{{item.duration}}</p>
+                <p class="card-price">{{item.price}}</p>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

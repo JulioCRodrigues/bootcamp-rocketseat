@@ -1,6 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const videos = require('./data');
+const works = require('./data');
 
 const server = express();
 
@@ -36,7 +36,25 @@ server.get("/", function(req, res){
 });
 
 server.get("/works", function(req, res){
-    return res.render("works", {items: videos});
+    return res.render("works", {items: works});
+});
+
+server.get("/work", function(req, res){
+    
+    const id = req.query.id;
+
+    const work = works.find(function(work){
+        if(work.id == id){
+            return true;
+        }
+    });
+
+    if(!work){
+        return res.send('Work not found!');
+    }
+
+    return res.render('work', {item: work});
+
 });
 
 server.listen(5000, function(){

@@ -181,3 +181,22 @@ iframe{
     top: -12px;
     border-radius: 16px;
 }
+
+/* === VIDEO PAGE == */ 
+.work{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card-work{
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card-work iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 15px;
+}
