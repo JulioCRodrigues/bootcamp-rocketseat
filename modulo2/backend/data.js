@@ -3,7 +3,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulario animado com JS puro e CSS animation | Julio Rodrigues",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 
     {
@@ -17,7 +18,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulario animado com JS puro e CSS animation | Julio Rodrigues",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 
     {
@@ -31,7 +33,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulario animado com JS puro e CSS animation | Julio Rodrigues",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 
     {
