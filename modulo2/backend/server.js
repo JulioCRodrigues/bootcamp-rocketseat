@@ -44,9 +44,9 @@ server.get("/work", function(req, res){
     const id = req.query.id;
 
     const work = works.find(function(work){
-        if(work.id == id){
-            return true;
-        }
+        
+        return work.id == id 
+        
     });
 
     if(!work){
