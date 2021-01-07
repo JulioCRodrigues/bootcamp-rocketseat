@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    {% block head%}
+        <link rel="stylesheet" href="/style.css">
+        <title>Foodfy - Projeto</title>
+        
+    {% endblock %}
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo Foodfy">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="/home">Sobre</a>
+                <a href="/recipes">Receitas</a>
+            </ul>
+        </div>
+    </header>
+ 
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="image-modal">
+                <img src="/images/asinhas.png" alt="Imagem do modal">
+            </div>
+
+            <div class="title-modal">
+                <p>Asinhas de frango ao barbecue</p>
+            </div>
+
+            <div class="author-modal">
+                <p>por Julio Rodrigues</p>
+            </div>
+
+            <div class="close-modal">
+                <p>Fechar modal</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Todos os direitos reservados, receitas Foodfy.</p>
+    </footer>
+
+    <script src="/scripts.js"></script>
+
+</body>
+</html>
