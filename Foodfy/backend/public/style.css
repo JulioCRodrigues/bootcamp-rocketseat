@@ -211,3 +211,59 @@ footer p{
     visibility: visible;
     opacity: 1;
 }
+
+/* CARD RECIPE UNIQUE */
+.image-card-recipe img{
+    width: 940px;
+    border-radius: 15px;
+}
+
+.title-card-recipe{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.author-card-recipe{
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    padding: 5px;
+}
+
+.ingredients{
+    display: flex;
+    margin-left: 20px;
+}
+
+.prepare{
+    display: flex;
+    margin-left: 20px;
+}
+
+.ingredients .prepare, button{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    color: #999999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ingredients-description ,.preparation{
+    color: #444444;
+    margin-left: 35px;
+
+}
+
+.preparation p{
+    padding: 5px;
+}
+
+/* button-hide ACTIVE */ 
+.ingredients-description.active, .preparation.active{
+    visibility: hidden;
+    opacity: 1;
+    display: none;
+}
+

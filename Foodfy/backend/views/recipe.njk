@@ -1,8 +1,10 @@
 {% extends "layout.njk" %}
 
 {% block head %}
+
     <title>{{item.title}} | Receitas</title>
     <link rel="stylesheet" href="/style.css">
+
 {% endblock%}
 
 {% block content %}
@@ -10,25 +12,55 @@
 
         <div class="cards">
 
-        {% for item in items %}
-            <div class="card" id="{{ items.indexOf(item) }}">
-                <div class="image-card">
+
+            <div class="card-recipe">
+                <div class="image-card-recipe">
                     <img src="{{item.image}}" alt="{{item.title}}">
                 </div>
-                <div class="title-card">
+                <div class="title-card-recipe">
                     <p>{{item.title}}</p>
                 </div>
 
-                <div class="author-card">
+                <div class="author-card-recipe">
                     <p> por {{item.author}}</p>
+                </div> 
+
+                <div class="ingredients">
+                    <h1>Ingredientes</h1>
+                    <button class="i-button">Esconder</button>
+
                 </div>
 
-         {% endfor %}       
+                <div class="topic">
+                    <div class="ingredients-description">
+                        <ul>
+                            {% for item in item.ingredients %}
+                                <li>{{item}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="topic">
+                <div class="prepare">
+                    
+                    <h1>Modo de preparo</h1>
+                    <button class="p-button">Esconder</button>
+
+                </div>
+
+                <div class="preparation">
+                    
+                    {% for item in item.preparation %}
+                        <p>{{item}}</p>
+                    {% endfor %}
+                </div>
             </div>
-            
+
+            </div>
         </div>
     </main>
-    <script src="/scripts.js"></script>
+    <script src="/hidden.js"></script>
 
 
 {% endblock %}
