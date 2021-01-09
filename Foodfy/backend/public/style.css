@@ -206,12 +206,6 @@ footer p{
     cursor: pointer;
 }
 
-/* MODAL ACTIVE */
-.modal-overlay.active{
-    visibility: visible;
-    opacity: 1;
-}
-
 /* CARD RECIPE UNIQUE */
 .image-card-recipe img{
     width: 940px;
@@ -241,7 +235,16 @@ footer p{
     margin-left: 20px;
 }
 
-.ingredients .prepare, button{
+.info-add{
+    display: flex;
+    margin-left: 20px;
+}
+
+.info-add h1, .info-add button{
+    margin-top: 40px;
+}
+
+.ingredients .prepare .info-add, button{
     text-decoration: none;
     background-color: white;
     padding: 10px;
@@ -250,7 +253,7 @@ footer p{
     cursor: pointer;
 }
 
-.ingredients-description ,.preparation{
+.ingredients-description ,.preparation, .information{
     color: #444444;
     margin-left: 35px;
 
@@ -260,8 +263,13 @@ footer p{
     padding: 5px;
 }
 
+.information p{
+    justify-content: center;
+    text-align: justify;
+}
+
 /* button-hide ACTIVE */ 
-.ingredients-description.active, .preparation.active{
+.ingredients-description.active, .preparation.active, .information.active{
     visibility: hidden;
     opacity: 1;
     display: none;
